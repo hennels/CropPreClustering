@@ -1,9 +1,9 @@
 from numba import njit, prange
 import numpy as np
 from scipy.spatial import cKDTree as KDTree
-from scalablecroppreclustering import graph
-from scalablecroppreclustering import kdtree2D
-from scalablecroppreclustering import kdtree3D
+from croppreclustering import graph
+from croppreclustering import kdtree2D
+from croppreclustering import kdtree3D
 
 @njit(parallel=True)
 def nRAIN(X, limit, leafsize=16, minimum_size=2):

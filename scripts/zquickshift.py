@@ -1,7 +1,7 @@
 import argparse
 import open3d as o3d
 import numpy as np
-from scalablecroppreclustering.paperalgs import negativeZquickshift
+from croppreclustering.paperalgs import negativeZquickshift
 
 parser = argparse.ArgumentParser(description='Perform Z Quickshift on a point cloud.')
 parser.add_argument('cloud', help='Path to point cloud.')

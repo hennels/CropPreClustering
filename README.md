@@ -16,7 +16,7 @@ poetry install
 ```
 
 ## Usage
-All algorithms are defined in `scalablecroppreclustering/paperalgs.py` if you would like to inspect the source. Each algorithm has a corresponding script in the `scripts/` folder and should be easily runnable with a `-h` parameter to print usage information.
+All algorithms are defined in `croppreclustering/paperalgs.py` if you would like to inspect the source. Each algorithm has a corresponding script in the `scripts/` folder and should be easily runnable with a `-h` parameter to print usage information.
 
 # Data
 In the `data/` folder there are four point clouds of corn fields on which the algorithms can be run. All point clouds were manually transformed so that the up direction in the world frame is pointed in the *+z* direction of the point cloud.

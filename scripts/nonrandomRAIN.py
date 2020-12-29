@@ -1,7 +1,7 @@
 import argparse
 import open3d as o3d
 import numpy as np
-from scalablecroppreclustering.paperalgs import nRAIN
+from croppreclustering.paperalgs import nRAIN
 
 parser = argparse.ArgumentParser(description='Perform non-random RAIN on a point cloud.')
 parser.add_argument('cloud', help='Path to point cloud.')

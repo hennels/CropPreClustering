@@ -1,7 +1,7 @@
 import argparse
 import open3d as o3d
 import numpy as np
-from scalablecroppreclustering.paperalgs import GDquickshift
+from croppreclustering.paperalgs import GDquickshift
 
 parser = argparse.ArgumentParser(description='Perform Ground Density Quickshift on a point cloud.')
 parser.add_argument('cloud', help='Path to point cloud.')
