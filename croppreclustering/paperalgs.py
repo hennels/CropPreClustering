@@ -130,5 +130,7 @@ def GDquickshiftpp(X, beta, k, leafsize=16, minimum_size=2):
     distance, _ = kdt.query(X[:, :2], k=[k], n_jobs=-1)
     print("MCores")
     G, density = MCores2(X[:, :2], beta, k, distance[:, 0], leafsize=leafsize)
+    print("stems")
+    stems = graph.components_array(G, minimum_size=2)
     print("Quickshift++")
-    return quickshiftpp3(X, density, G, leafsize=leafsize, minimum_size=minimum_size)
+    return quickshiftpp3(X, density, G, leafsize=leafsize, minimum_size=minimum_size), stems
