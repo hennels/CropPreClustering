@@ -1,5 +1,5 @@
 # CropPreClustering
-A repository containing point clouds of crops and some pre-clustering algorithms to operate on them. Meant as companion data and code for the ICRA 2021 submission "Scalable Methods for Pre-Clustering Point Clouds of Crop Fields".
+A repository containing point clouds of crops and some pre-clustering algorithms to operate on them. Meant as companion data and code for the IROS 2021 submission "Scalable Methods for Pre-Clustering Point Clouds of Crop Fields".
 
 This repository contains code for all the algorithms defined in the paper written in Python. While Python is not an extremly performant language, it does make development easy with readily installable libraries for 3D file reading, spatial data structures, and visualization.
 
@@ -47,3 +47,8 @@ poetry run python scripts/gdquickshiftpp.py data/DjiV4.ply 1200 0.4
 ```
 ![GD Quickshift++ Result](images/GDquickshift++.gif)
 
+# Evaluation
+The script `scripts/compare_clustering.py` is provided to evaluate clusterings relative to some ground truth. The script computes the optimal relationship between ground truth and predicted clusters and prints mean and median IoU statistics to the screen.
+```
+poetry run python scripts/compare_clustering.py data/0to9_1M/0to9_1M.ply data/0to9_1M/0to9_1M_GDqspp_1500_pt4.ply
+```
