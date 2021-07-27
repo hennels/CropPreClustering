@@ -1,5 +1,5 @@
 # CropPreClustering
-A repository containing point clouds of crops and some pre-clustering algorithms to operate on them. Meant as companion data and code for the IROS 2021 submission "Scalable Methods for Pre-Clustering Point Clouds of Crop Fields".
+A repository containing point clouds of crops and some pre-clustering algorithms to operate on them. Meant as companion data and code for the paper [Pre-Clustering Point Clouds of Crop Fields Using Scalable Methods](https://arxiv.org/abs/2107.10950).
 
 This repository contains code for all the algorithms defined in the paper written in Python. While Python is not an extremly performant language, it does make development easy with readily installable libraries for 3D file reading, spatial data structures, and visualization.
 
